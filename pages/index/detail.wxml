@@ -1,0 +1,69 @@
+<view class="pub-con1">
+<view class="banner1"><image src="{{imgurl}}{{data.detail.litpic}}"></image></view>
+<view class="c-detail">
+<view class="ct-name">{{data.detail.title}}</view>
+<view class="ct-detail">{{data.detail.description}}</view></view>
+<view class="weui-tab">
+        <view class="weui-navbar">
+            <block wx:for-items="{{tabs}}" wx:key="{{index}}">
+                <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                    <view class="weui-navbar__title">{{item}}</view>
+                </view>
+            </block>
+        </view>
+        <view class="weui-tab__panel">
+            <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+              <block wx:for="{{data.detail.body}}"  wx:for-index="idy"  wx:for-item="cellData">
+                <block  wx:if="{{cellData.type == 'view'}}">
+                    <view class="p">
+                        <block  wx:for="{{cellData.child}}" wx:key="text">
+                            <block  wx:if="{{item.type == 'a'}}">
+                                <text class="a" data-seccode="{{item.attr['data-seccode']}}" data-secname="{{item.attr['data-secname']}}" bindtap="stockClick">{{item.text}}</text>
+                            </block>
+                            <block  wx:else>
+                                <text>{{item.text}}</text>
+                            </block>
+                        </block>
+                    </view>
+                </block>
+                <block wx:if="{{cellData.type == 'img'}}">
+                    <image class="img" data-index="{{idy}}" style="height: {{cellData.attr.height?cellData.attr.height:0}}px" style="width:100%"  mode="widthFix" src="{{imgurl}}{{cellData.attr.src}}" bindload="imageLoad"></image>
+                </block>
+            </block>
+            </view>
+             <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+                <block wx:for="{{data.detail2.attr}}" >
+                  <view class="parameter">{{index}}:{{item}}</view>
+                </block>  
+            </view>  
+            <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+              <!-- pro -->
+              <view class="pro_list">
+
+                <view class="pro">
+               
+                   <block wx:for="{{data.product}}" >
+                    <navigator url="/pages/index/detail?id={{item.id}}" class="pro-nav2">
+                      <image src="{{imgurl}}{{item.litpic}}"></image>
+                      <view class="txt">
+                        <text class="name">{{item.title}}</text>
+                      </view>
+                    </navigator>
+                  </block> 
+                </view>
+              </view>
+            </view>
+        </view>
+    </view>
+
+</view>
+
+
+
+
+
+<view  class="foot-nav1">
+<block wx:for="{{data.arctypes}}" >
+    <navigator open-type="switchTab" url="/pages/index/{{item.defaultnames}}"><view class="foot-pic1"><image src="../../img/{{item.defaultnames}}.png"></image></view><view class="foot-text1">{{item.typename}}</view></navigator>
+</block>
+</view>

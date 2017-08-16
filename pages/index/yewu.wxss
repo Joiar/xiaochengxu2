@@ -1,0 +1,4 @@
+/* pages/index/yewu.wxss */
+.yw-text{width:96%;color:#000;margin:0 auto;}
+.yw-text .yw-one{font-size:39.8438rpx;line-height:63.75rpx;display: block;font-weight:700;}
+.yw-text .yw-two{font-size:30.4688rpx;line-height:48.75rpx;display: block;}

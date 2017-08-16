@@ -1,0 +1,4 @@
+/* pages/index/about.wxss */
+.ab-item1{width:96%;margin:0 auto}
+.ab-item1 image{float:left;display: block;width:52%;height:234.38rpx;padding:2%;}
+.ab-item1 text{display: block;color:rgb(0, 0, 0);font-size:30.30rpx;line-height:48.49rpx;}

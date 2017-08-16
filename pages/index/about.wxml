@@ -1,0 +1,41 @@
+<!--index.wxml-->
+
+<view class="pub-con1">
+<view class="product">
+  <block wx:for="{{data.about}}" >
+    <view class="pro-hd">
+    <view class="pro-tle">{{item.title}}</view></view>
+    <view class="ab-item1 clearfix">
+    <image src="{{imgurl}}{{item.litpic}}"></image>
+    <text>{{item.body}}</text>
+    </view>
+  </block>
+   <block wx:for="{{data.abouts}}" >
+    <view class="pro-hd">
+    <view class="pro-tle">{{item.title}}</view></view>
+    <view class="ab-item1 clearfix">
+    <image src="{{imgurl}}{{item.litpic}}" style="width:100%"></image>
+    <text>{{item.body}}</text>
+    </view>
+  </block>
+
+</view>
+
+<view class="copyright">
+<block wx:for="{{data.copyrights}}" >
+   <text>{{item.description}}</text> 
+</block>
+</view>
+</view>
+<view  class="foot-nav1">
+<block wx:for="{{data.arctypes}}" >
+    <navigator open-type="switchTab" url="/pages/index/{{item.defaultnames}}"><view class="foot-pic1"><image src="../../img/{{item.defaultnames}}.png"></image></view><view class="foot-text1">{{item.typename}}</view></navigator>
+</block>
+</view>
+
+
+
+
+
+ 
+

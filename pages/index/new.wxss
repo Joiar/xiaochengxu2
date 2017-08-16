@@ -1,0 +1,5 @@
+/* pages/index/new.wxss */
+.new-details{width:94%;margin:0 auto;position: relative;}
+.newde-tle{font-size:32.8125rpx;color:rgb(51, 51, 51);line-height:46.875rpx;display:block;} 
+.newde-time{display: block;color:rgb(153, 153, 153);font-size:28rpx;line-height:28rpx;}
+.newde-text{color:rgb(153, 153, 153);font-size:32.8125rpx;line-height:56.25rpx}

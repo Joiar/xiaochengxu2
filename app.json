@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/index/contact",
+    "pages/index/new-list",
+    "pages/index/product-list",
+    "pages/index/yewu",
+    "pages/index/new",
+    "pages/index/message",
+    "pages/index/about",
+    "pages/index/detail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FF621C",
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "案例",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#FF621C",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "img/index.png",
+        "selectedIconPath": "img/aindex.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/index/new-list",
+        "iconPath": "img/navprod1.png",
+        "selectedIconPath": "img/apro1.png",
+        "text": "新闻动态"
+      },
+      {
+        "pagePath": "pages/index/message",
+        "iconPath": "img/nmess12.png",
+        "selectedIconPath": "img/mess12.png",
+        "text": "在线留言"
+      },
+      {
+        "pagePath": "pages/index/product-list",
+        "iconPath": "img/pro21.png",
+        "selectedIconPath": "img/apro21.png",
+        "text": "产品中心"
+      }
+      
+    ]
+  },
+   
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

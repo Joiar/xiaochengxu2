@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="pub-con1">
+<view class="product">
+<block wx:for="{{data.product}}" >
+        <view class="yw-text"><text class="pro-name">{{item.title}}</text>
+        <text class="yw-two">{{item.body}}</text>
+        </view>
+</block>
+<view class="pro-hd">
+<view class="pro-tle">服务案例</view></view>
+<view class="yw-al clearfix">
+<block wx:for="{{data.imgs}}" >
+      <view class="yw-item"><image src="{{imgurl}}{{item.litpic}}"></image></view>
+</block>
+</view>
+
+</view>
+ 
+<view class="copyright">
+<block wx:for="{{data.copyrights}}" >
+   <text>{{item.description}}</text> 
+</block>
+</view>
+</view>
+<view  class="foot-nav1">
+<block wx:for="{{data.arctypes}}" >
+    <navigator open-type="switchTab" url="/pages/index/{{item.defaultnames}}"><view class="foot-pic1"><image src="../../img/{{item.defaultnames}}.png"></image></view><view class="foot-text1">{{item.typename}}</view></navigator>
+</block>
+</view>
+
+
+ 
+

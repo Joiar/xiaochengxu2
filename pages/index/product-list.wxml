@@ -1,0 +1,27 @@
+<!--index.wxml-->
+
+
+
+
+<view class="product">
+<view class="pro-hd">
+<view class="pro-tle">产品中心</view></view>
+<view class="yw-al clearfix">
+<block wx:for="{{product}}" >
+  <navigator class="pro-item clearfix" url="/pages/index/detail?id={{item.id}}" style="height:307rpx;width:48%;margin:0 1%;">
+      <view class="yw-item" style="padding:0;width:100%;"><image src="{{imgurl}}{{item.litpic}}"></image><text style="text-overflow: ellipsis;overflow:hidden;white-space:nowrap">{{item.title}}</text></view>
+  </navigator>
+</block>
+</view>
+</view>
+
+<view class="status" wx:if="{{status}}">{{msg}}</view>
+
+
+
+
+
+
+
+
+

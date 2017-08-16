@@ -1,0 +1,32 @@
+<!--index.wxml-->
+
+
+<view class="product">
+<view class="pro-hd">
+<view class="pro-tle">新闻动态</view></view>
+<view class="pro-list clearfix">
+<block wx:for="{{data.newss}}" >
+    <navigator class="pro-item clearfix" url="../index/new?id={{item.id}}">
+        <view class="pro-img"><image src="{{imgurl}}{{item.litpic}}"></image></view>
+        <view class="pro-text"><text class="pro-name">{{item.title}}</text>
+        <text class="pro-des">{{item.description}}</text>
+        </view>
+    </navigator>
+</block>
+</view>
+</view>
+
+<view class="copyright">
+<block wx:for="{{data.copyrights}}" >
+   <text>{{item.description}}</text> 
+</block>
+</view>
+
+
+
+
+
+
+
+ 
+

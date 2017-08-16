@@ -1,0 +1,2 @@
+/* pages/index/contact.wxss */
+.cont{font-size:35.8rpx;color:#000;line-height:1.6;display: block;text-indent:6rpx; }

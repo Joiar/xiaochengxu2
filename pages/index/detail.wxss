@@ -1,0 +1,29 @@
+/* pages/index/ceshi.wxss */
+
+.banner1{height:352rpx;width:100%;}
+.banner1 image{height:352rpx;width:100%;}
+.c-detail{width:96%;margin:0 auto;}
+.ct-name{font-size:32.8125rpx;color:#666;line-height:1.6;}
+.ct-detail{font-size:28.125rpx;line-height:1.6}
+/*  */
+.weui-navbar{overflow: hidden;border-bottom:1px solid #CCCCCC; }
+.weui-navbar__item{font-size: 32rpx;height: 80rpx;line-height: 80rpx;width:33.33%;float: left;text-align: center;border-bottom:2px solid #FFFFFF;}
+.weui-bar__item_on{border-bottom:2px solid red;color: red;}
+.weui-tab__panel{padding: 20rpx 0;}
+
+.detail_txt{font-size: 26rpx;line-height:50rpx;padding:0 20rpx;}
+.detail_img image{width: 100%;display: block;}
+.parameter{border-bottom:1px solid #cccccc;font-size: 26rpx;line-height:80rpx;padding:0 20rpx;}
+
+/*pro  */
+.pro_list{overflow: hidden;padding: 20rpx 0;}
+.pro{box-sizing: border-box;width:96%;margin: 2%;float: left;overflow: hidden;}
+.pro-nav2{width:50%;float:left}
+.pro .name{font-size: 36rpx;display: block;line-height:48rpx;height:48rpx;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align: center}
+.pro .price_box{overflow: hidden;line-height: 40rpx;height: 40rpx;}
+.pro .price{font-size: 26rpx;color:#f15622;margin-right: 16%;}
+.pro .old_price{font-size: 26rpx;color: #909090;text-decoration: line-through;}
+.pro .bottom{overflow: hidden;color: #909090;font-size: 24rpx;height: 36rpx;}
+.pro .txt{padding:20rpx 10rpx;}
+.pro .txt view{padding-top: 10rpx;}
+.pro image{width:46vw;height:46vw;}

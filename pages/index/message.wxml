@@ -1,0 +1,50 @@
+<!--index.wxml-->
+ 
+<view class="public-title"> 
+<view class="pub-l"></view>
+<view style="float:left">留言板</view>
+<text class="textWarn"></text>
+</view>
+<form bindsubmit="formSubmit">
+<view class="message-box">
+<text class="message-tle">发表您的留言：</text>  
+<view class="mess-box">
+<view class="mess-item clearfix">
+<view>
+<image src="images/use.png"></image>
+</view>
+<input name="realname"  placeholder="姓名(必填)" type="text" value="{{address.realname}}"/></view>
+<!-- <view class="mess-item clearfix" style="border-top:none;border-bottom:none"> -->
+<!-- <view>
+<image src="images/email.png"></image>
+</view> -->
+<!-- <input name="email" placeholder="邮箱" type="text" value="{{address.email}}" /> -->
+<!-- </view> -->
+<view class="mess-item clearfix" style="border-top:none;border-bottom:none"><view>
+<image src="images/tel1.png"></image></view>
+<input name="mobile" placeholder="手机" type="number" value="{{address.mobile}}" />
+</view>
+<view class="mess-item clearfix" style="overflow:hidden"><view>
+<image src="images/text.png"></image></view><textarea placeholder="内容" value="{{address.text}}" name="text" />
+</view>
+<!-- <view class="mess-item clearfix">
+<input name="" placeholder="请输入验证码" style="padding-left:6%;width:55%"/>
+<view style="width:39%;"><image src="images/code.png" style="width:66%;height:80rpx;"></image>
+</view> -->
+<!-- </view>  -->
+<view class="mess-item" style="margin-top:1%;border:none;">
+<button style="background-color:#ff621c;text-align:center;width:100%;color:#fff"  formType="submit" type="primary">提交</button>
+</view>
+</view>
+</view>
+</form>
+
+<view class="copyright">
+<block wx:for="{{data.copyrights}}" >
+   <text>{{item.description}}</text> 
+</block>
+</view>
+   
+         
+
+
